@@ -16,8 +16,7 @@ let htmlScore = document.querySelector('#score')
 var audioClick = new Audio('./sound/clickor.mp4'); 
 
 function preload() {
-//     // soundFormats('mp4');
-// mySound = loadSound('/sound/click.mp4');
+let win = loadImage('./background/win.png')
   }
 
 function setup() {
@@ -65,12 +64,12 @@ if(frameCount % 100 === 0) {
              
              
              
-             if (score > 20) {
-                htmlScore.innerHTML = `you Win!`;
+             if (score > 25) {
+                htmlScore.innerHTML = `<h1>you Win!<h1>`;
                 remove();
                 
                 } else {
-                htmlScore.innerHTML = `Collect 20 labs to Win. Your score is: ${score}`;
+                htmlScore.innerHTML = `Collect 25 labs to Win. Your score is: ${score}`;
              }
              
              
