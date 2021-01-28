@@ -14,38 +14,32 @@
 
 // }
 
-let timeLeft = 60;
-const gameOver = document.querySelector(".game-over")
-const timeLeftDisplay = document.querySelector('#time-left')
-document.addEventListener('DOMContentLoaded', () => {
-   countDown() 
-        
-    })
-    
-    function countDown() {
-    let countDown = setInterval(function() {
-        if(timeLeft <= 0) {
-            timeLeft = 0
-           clearInterval(countDown)  
-           remove()
-          gameOver.innerHTML = "You were overwhelmed!"
-           
-           
-           
-           
+;
 
-           
-            
-            
-           
+document.addEventListener('DOMContentLoaded', () => {
+    const gameOver = document.querySelector(".game-over")
+    const timeLeftDisplay = document.querySelector('#time-left')
+    const startBtn = document.querySelector('#start-button')
+    let timeLeft = 60
+    //countDown() 
+        
+  
+
+    function countDown() {
+    setInterval(function() {
+        if (timeLeft <= 0) {     
+           clearInterval(timeLeft = 0)  
         }
-        timeLeftDisplay.innerHTML = timeLeft
-        timeLeft -= 1;
+          timeLeftDisplay.innerHTML = timeLeft
+          timeLeft -= 1;  
     }, 1000)
     
-    }
+ }
 
-    let clockTime = document.querySelector('#timeLeft')
+ startBtn.addEventListener('click', countDown)
+}) 
+
+    //let clockTime = document.querySelector('#timeLeft')
 
 
 

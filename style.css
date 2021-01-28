@@ -47,15 +47,18 @@ font-size: 100%;
 .intro {
 color: white;    
 /* background-image: url('/background/istockphoto-962532280-612x612.jpg'); */
-background-image: url('/background/zoombg.png');
+/* background-image: url('/background/jan.png');  */
 position: absolute; top: 0; left: 0; height: 100%; width: 100%;
 display: flex;
 text-align: center;
 justify-content: center;
 flex-direction: column;
+background-color: black;
+opacity: 70%;
 }
 
 h3 {
     font-family: 'Courier New', Courier, monospace; 
 }
+
 
