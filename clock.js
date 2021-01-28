@@ -27,8 +27,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if(timeLeft <= 0) {
             timeLeft = 0
            clearInterval(countDown) 
+        //    if (score == 20) {
+        //     gameOver.innerHTML = "you Win!"
+        // }  
            remove()
-           gameOver.innerHTML = "GAME OVER!"
+          gameOver.innerHTML = "The Labs Always Win!"
+           
+           
            
            
 

@@ -14,7 +14,7 @@ let elements;
 let score = 0;
 
 let htmlScore = document.querySelector('#score')
-// clockTime.innerHTML = `Time until you are overwhelmed: ${timeLeft}`;
+
 
 
 
@@ -29,18 +29,18 @@ createCanvas(1000, 1000)
 function draw() {    
 clear()
 
-textSize(40)
+textSize(20)
 
 
 labNames = labNames.filter(lab => {
-    x = random(100, 900);
-    y = random(100, 900);
+    x = random(100, 600);
+    y = random(100, 600);
     if (lab.clicked) {
         return false;
     } else {
         lab.x = x;
         lab.y = y;
-        text(lab.text, x, y, 100, 900)
+        text(lab.text, x, y, 100, 600)
         frameRate(1)
         return true;
     }
@@ -49,7 +49,7 @@ labNames = labNames.filter(lab => {
 
 if(frameCount % 100 === 0) {
     //console.log('frame')
-    x = random(100, 700)
+    x = random(100, 600)
     y = random(100, 600)
    }
  }
