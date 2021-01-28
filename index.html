@@ -7,17 +7,26 @@
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.min.js"></script>
-    <title>Document</title>
+    <title>Keeping up with the Labs</title>
 </head>
 <body>
+    
     <div class="cursor"></div>
-    <div id="string">
-        <h1>Click on all the Labs before you are overwhelmed!<br>
-        <!-- *************Jan is here to help!****************** -->
+    <div id="score">
+          
+        <!-- <h2 id="timer"></h2> -->
+       
+        <h1>
+            Keeping up with the Labs  <br>
+            Click on all the Labs before you are overwhelmed!<br>
+        Jan is here to bail you out! 
         </h1>
 
     </div>
-    <div id="canvas"></div>
+    <h3>Seconds Left: <span id="time-left">10</span></h3>  
+    <div id="canvas"></div> 
+    <div class="game-over"></div>
+    <script src="./clock.js"></script>
     <script src="./labnames.js"></script>
     <script src="./main.js"></script>
 </body>
