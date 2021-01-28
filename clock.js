@@ -29,6 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
     setInterval(function() {
         if (timeLeft <= 0) {     
            clearInterval(timeLeft = 0)  
+           remove();
+           gameOver.innerHTML = `You have been overwhelmed!`
         }
           timeLeftDisplay.innerHTML = timeLeft
           timeLeft -= 1;  

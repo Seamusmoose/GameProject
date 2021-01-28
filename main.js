@@ -69,8 +69,7 @@ if(frameCount % 100 === 0) {
                 htmlScore.innerHTML = `you Win!`;
                 remove();
                 
-                 
-             } else {
+                } else {
                 htmlScore.innerHTML = `Collect 20 labs to Win. Your score is: ${score}`;
              }
              
